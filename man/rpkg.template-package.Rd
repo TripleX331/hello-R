@@ -4,9 +4,9 @@
 \name{rpkg.template-package}
 \alias{rpkg.template}
 \alias{rpkg.template-package}
-\title{rpkg.template: What the Package Does (One Line, Title Case)}
+\title{rpkg.template: Seasonal Removal and Piecewise Regression Utilities}
 \description{
-What the package does (one paragraph).
+Provides utilities for removing seasonal components and fitting piecewise least-squares regressions with common slopes and separate intercepts.
 }
 \author{
 \strong{Maintainer}: Dongdong Kong \email{kongdd.sysu@gmail.com} (\href{https://orcid.org/0000-0003-1836-8172}{ORCID})

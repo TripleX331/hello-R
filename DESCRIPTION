@@ -1,10 +1,12 @@
 Package: rpkg.template
-Title: What the Package Does (One Line, Title Case)
+Title: Seasonal Removal and Piecewise Regression Utilities
 Version: 0.1.0.9000
 Authors@R: c(
   person("Dongdong", "Kong", role = c("aut", "cre"), 
          email = "kongdd.sysu@gmail.com", comment = c(ORCID = "0000-0003-1836-8172")))
-Description: What the package does (one paragraph).
+Description: Provides utilities for removing seasonal components and fitting
+    piecewise least-squares regressions with common slopes and separate
+    intercepts.
 License: MIT + file LICENSE
 Imports:
     magrittr
@@ -13,4 +15,4 @@ Suggests:
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1

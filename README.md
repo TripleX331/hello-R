@@ -9,7 +9,11 @@
 <!-- [![monthly](http://cranlogs.r-pkg.org/badges/rpkg.template)](https://www.rpackages.io/package/rpkg.template) -->
 <!-- badges: end -->
 
-The goal of `rpkg.template` is to ...
+`rpkg.template` provides lightweight utilities for seasonal decomposition and
+piecewise regression:
+
+- `RemoveSeasonal()` computes seasonal means and removes them from observations.
+- `LS_OneBreak()` and `LS_MultiBreaks()` fit piecewise least-squares models.
 
 ## Installation
 
@@ -21,9 +25,17 @@ remotes::install_github("rpkgs/rpkg.template")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Remove a monthly seasonal cycle:
 
 ``` r
 library(rpkg.template)
-## basic example code
+
+result <- RemoveSeasonal(
+  y = c(10, 12, 20, 22),
+  t_mmdd = c(101, 101, 102, 102)
+)
+result$mu
+#> [1] 11 21
+result$anomaly
+#> [1] -1 1 -1 1
 ```
